@@ -1,0 +1,39 @@
+{
+  "packages": [
+    {
+      "name": "ArduinoSPS",
+      "maintainer": "Wilfried Klaas",
+      "websiteURL": "https://github.com/willie68/ArduinoSPS",
+      "email": "w.klaas@gmx.de",
+      "help": {
+        "online": "https://github.com/willie68/ArduinoSPS"
+      },
+      "platforms": [
+        {
+          "name": "ArduinoSPS",
+          "architecture": "avr",
+          "version": "1.0",
+          "category": "Contributed",
+          "url": "https://github.com/willie68/ArduinoSPS/archive/1.0.tar.gz",
+          "archiveFileName": "ArduinoSPS-1.0.tar.gz",
+          "boards": [
+            {"name": "TinySPS"}
+          ]
+        }
+      ],
+      "toolsDependencies": [
+        {
+          "packager": "arduino",
+          "name": "avr-gcc",
+          "version": "4.8.1-arduino5"
+        },
+        {
+          "packager": "arduino",
+          "name": "avrdude",
+          "version": "6.0.1-arduino5"
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
