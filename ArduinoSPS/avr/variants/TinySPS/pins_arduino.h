@@ -29,7 +29,7 @@
 #define Pins_Arduino_h
 
 #include <avr/pgmspace.h>
-
+#include "SPSDefinitions.h"
 // ATMEL ATTINY84 / ARDUINO
 //
 //                           +-\/-+
