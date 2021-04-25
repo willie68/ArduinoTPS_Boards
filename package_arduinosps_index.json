@@ -12,10 +12,10 @@
         {
           "name": "ArduinoSPS",
           "architecture": "avr",
-          "version": "1.0.2",
+          "version": "1.0.3",
           "category": "Contributed",
-          "url": "https://github.com/willie68/ArduinoSPS/archive/1.0.2.tar.gz",
-          "archiveFileName": "ArduinoSPS-1.0.2.tar.gz",
+          "url": "https://github.com/willie68/ArduinoSPS/archive/1.0.3.tar.gz",
+          "archiveFileName": "ArduinoSPS-1.0.3.tar.gz",
           "boards": [
             {"name": "TinySPS"}
           ]
