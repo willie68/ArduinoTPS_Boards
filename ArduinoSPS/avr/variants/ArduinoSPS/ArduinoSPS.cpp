@@ -58,7 +58,7 @@ void ArduinoSPS::PWM(uint8_t channel, uint8_t value) {
 		  analogWrite(PWM1, value);
 		  break;
 		case 2:
-		  analogWrite(PWM1, value);
+		  analogWrite(PWM2, value);
 		  break;
 	}
 }
