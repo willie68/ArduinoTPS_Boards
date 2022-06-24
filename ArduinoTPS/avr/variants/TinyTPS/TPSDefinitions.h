@@ -1,6 +1,6 @@
-#ifndef SPSDefinitions_h
+#ifndef TPSDefinitions_h
 
-#define SPSDefinitions_h
+#define TPSDefinitions_h
 
 #include <inttypes.h>
 

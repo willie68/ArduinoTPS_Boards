@@ -1,12 +1,12 @@
-#ifndef ArduinoSPS_h
+#ifndef ArduinoTPS_h
 
-#define ArduinoSPS_h
+#define ArduinoTPS_h
 
 #include <inttypes.h>
 
-class ArduinoSPS {
+class ArduinoTPS {
   public:
-    ArduinoSPS();
+    ArduinoTPS();
 	void DOUT(uint8_t value);
 	void DOUT(uint8_t channel, uint8_t value);
 	void PWM(uint8_t channel, uint8_t value);

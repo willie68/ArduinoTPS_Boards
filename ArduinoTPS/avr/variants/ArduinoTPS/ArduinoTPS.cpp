@@ -1,10 +1,10 @@
-#ifndef ArduinoSPS_c
-#define ArduinoSPS_c
+#ifndef ArduinoTPS_c
+#define ArduinoTPS_c
 
 #include "Arduino.h"
-#include "ArduinoSPS.h"
+#include "ArduinoTPS.h"
 
-ArduinoSPS::ArduinoSPS() {
+ArduinoTPS::ArduinoTPS() {
 	pinMode(Din1, INPUT_PULLUP);
 	pinMode(Din2, INPUT_PULLUP);
 	pinMode(Din3, INPUT_PULLUP);
@@ -28,14 +28,14 @@ ArduinoSPS::ArduinoSPS() {
 	pinMode(DIGIT_CLOCK, OUTPUT);
 }
 
-void ArduinoSPS::DOUT(uint8_t value) {
+void ArduinoTPS::DOUT(uint8_t value) {
 	digitalWrite(Dout1, value & 0x01);
 	digitalWrite(Dout2, value & 0x02);
 	digitalWrite(Dout3, value & 0x04);
 	digitalWrite(Dout4, value & 0x08);
 }
 
-void ArduinoSPS::DOUT(uint8_t channel, uint8_t value) {
+void ArduinoTPS::DOUT(uint8_t channel, uint8_t value) {
 	switch (channel) {
 		case 1:
 	      digitalWrite(Dout1, value & 0x01);
@@ -52,7 +52,7 @@ void ArduinoSPS::DOUT(uint8_t channel, uint8_t value) {
 	}
 }
 
-void ArduinoSPS::PWM(uint8_t channel, uint8_t value) {
+void ArduinoTPS::PWM(uint8_t channel, uint8_t value) {
 	switch (channel) {
 		case 1:
 		  analogWrite(PWM1, value);
@@ -63,19 +63,19 @@ void ArduinoSPS::PWM(uint8_t channel, uint8_t value) {
 	}
 }
 
-uint8_t ArduinoSPS::SEL() {
+uint8_t ArduinoTPS::SEL() {
 	return !digitalRead(SW_SEL);
 }
 
-uint8_t ArduinoSPS::PRG() {
+uint8_t ArduinoTPS::PRG() {
 	return !digitalRead(SW_PRG);
 }
 
-uint8_t ArduinoSPS::DIN() {
+uint8_t ArduinoTPS::DIN() {
 	return digitalRead(Din1) + (digitalRead(Din2) < 1) + (digitalRead(Din3) < 2) + (digitalRead(Din4) < 3);
 }
 
-uint8_t ArduinoSPS::DIN(uint8_t channel) {
+uint8_t ArduinoTPS::DIN(uint8_t channel) {
 	switch (channel) {
 		case 1:
 	      return digitalRead(Din1);
@@ -92,7 +92,7 @@ uint8_t ArduinoSPS::DIN(uint8_t channel) {
 	}
 }
 
-uint16_t ArduinoSPS::AIN(uint8_t channel) {
+uint16_t ArduinoTPS::AIN(uint8_t channel) {
 	switch (channel) {
 		case 1:
 	      return analogRead(ADC1);

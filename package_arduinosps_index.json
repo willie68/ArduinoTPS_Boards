@@ -1,23 +1,23 @@
 {
   "packages": [
     {
-      "name": "ArduinoSPS",
+      "name": "ArduinoTPS",
       "maintainer": "Wilfried Klaas",
-      "websiteURL": "https://github.com/willie68/ArduinoSPS",
+      "websiteURL": "https://github.com/willie68/ArduinoTPS_Boards",
       "email": "w.klaas@gmx.de",
       "help": {
-        "online": "https://github.com/willie68/ArduinoSPS"
+        "online": "https://github.com/willie68/ArduinoTPS_Boards"
       },
       "platforms": [
         {
-          "name": "ArduinoSPS",
+          "name": "ArduinoTPS",
           "architecture": "avr",
           "version": "1.0.4",
           "category": "Contributed",
-          "url": "https://github.com/willie68/ArduinoSPS/archive/1.0.4.tar.gz",
-          "archiveFileName": "ArduinoSPS-1.0.4.tar.gz",
+          "url": "https://github.com/willie68/ArduinoTPS_Boards/archive/1.0.4.tar.gz",
+          "archiveFileName": "ArduinoTPS_Boards-1.0.4.tar.gz",
           "boards": [
-            {"name": "TinySPS"}
+            {"name": "TinyTPS"}
           ]
         }
       ],

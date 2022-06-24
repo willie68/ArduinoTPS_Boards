@@ -1,4 +1,4 @@
-name=ArduinoSPS
+name=ArduinoTPS
 version=1.0.4
 
 # AVR compile variables
